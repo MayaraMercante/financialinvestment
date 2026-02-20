@@ -48,4 +48,5 @@ JavaScript was used extensively to make the website interactive. It handles form
 
 This site has been deployed to GitHub Pages at the URL below:
 
-[View Live Site](https://seunome.github.io/JavaScript-Lab/)
+
+[View Live Site](https://mayaramercante.github.io/financialinvestment/)
