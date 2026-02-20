@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* body*/
+body {
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/*header*/
+
+.header {
+  background: #6b6055;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.header section {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+ color:#f0f0f0;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color:#f0f0f0;
+  cursor: pointer;
+}
+
+/* main */
+
+main {
+  flex: 1;
+  padding-top: 120px;
+}
+
+/* home */
+
+.home {
+  background-color: #f0f0f0;
+  padding: 60px 20px;
+}
+
+.home-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.home-text {
+  flex: 1;
+}
+
+.home-text .title {
+  font-size: 46px;
+  margin-bottom: 20px;
+  color: #ea8746;
+}
+
+.home-subtitle {
+  font-size: 22px;
+  color: #ea8746;
+  margin-bottom: 15px;
+}
+
+.home-description {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.home-btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.home-btn:hover {
+  background: #ea8746;
+}
+
+.home-animation {
+  flex: 1;
+  text-align: center;
+}
+
+.home-animation img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+/* resgister e personal information form */
+
+.register {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 120px);
+  padding: 20px;
+}
+
+.title {
+  font-size: 36px;
+  color: #ea8746;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.register-form {
+  background: #f0f0f0;
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px #000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* input*/
+
+.register-form input,
+.register-form select {
+  padding: 12px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #000;
+  outline: none;
+  box-shadow: 0 0 5px #000;
+}
+
+/* button*/
+
+.register-form input[type="submit"] {
+  padding: 14px;
+  background: #000;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-form input[type="submit"]:hover {
+  background: #ea8746;
+}
+
+/* chart*/
+
+canvas {
+  width: 100% !important;
+  max-width: 900px;
+  margin: 40px auto;
+  display: block;
+}
+
+/* footer */
+
+footer {
+  background: #6b6055;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer img {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background: #6b6055;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 220px;
+    padding: 20px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
